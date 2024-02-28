@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="js/main.js" defer></script>
+		<title>DALL-E 2 Image Generator</title>
+	</head>
+	<body>
+		<main>
+			<section class="showcase">
+				<form id="image-form">
+					<h1>Describe An Image</h1>
+					<div class="form-control">
+						<input type="text" id="prompt" placeholder="Enter Text" />
+					</div>
+					<div class="form-control">
+						<select name="size" id="size">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+
+			<section class="image">
+				<div class="image-container">
+					<h2 class="msg"></h2>
+					<img src="" alt="" id="image" />
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
